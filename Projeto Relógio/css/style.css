@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Painted;
+    src: url(../fonts/Painted.ttf)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Major Mono Display", monospace;
+}
+
+body {
+    background: url("https://d3n32ilufxuvd1.cloudfront.net/55de0729e906973c0d08e096/986478/upload-bedc54f0-216e-11e8-ab5e-f564ba065357.gif") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #ffffffda;
+    text-transform: uppercase;
+}
+
+p {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Indie Flower", cursive;
+}
+
+.relogio {
+    background-color: transparent;
+    width: 90%;
+    padding: 3% 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 8px 10px #00000062;
+    border-radius: 5px;
+}
+
+.relogio div {
+    border: 1px solid white;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    color: #fff;
+    background: #aaab9fc2;
+    /* background:  linear-gradient(150deg, #43579C, #56689A, #627777, #ACAA40); */
+    box-shadow: 5px 5px 15px #00000044;
+    margin: 2%;
+    padding: 3%;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 4.5rem;
+}
+
+.relogio span.tempo {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+    .relogio {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    h1 {
+        top: 5%;
+        font-size: 1.5rem;
+    }
+}
